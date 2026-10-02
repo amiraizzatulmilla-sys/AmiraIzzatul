@@ -1,0 +1,457 @@
+/* Styling Utama & Variabel Tema Biru Pastel Modern */
+:root {
+    --primary: #5c8fc7;
+    --primary-dark: #4172a6;
+    --primary-light: #e6f0fa;
+    --accent: #a3c1e9;
+    --bg-main: #f8fbff;
+    --bg-card: #ffffff;
+    --text-main: #2d3748;
+    --text-muted: #64748b;
+    --border-radius: 16px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.7;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(92, 143, 199, 0.08);
+    z-index: 1000;
+}
+
+.nav-brand h2 {
+    font-size: 1.5rem;
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+.nav-brand span {
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 8% 80px 8%;
+    background: linear-gradient(135deg, var(--primary-light) 0%, #f4f8fd 100%);
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1.2;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(92, 143, 199, 0.15);
+    color: var(--primary-dark);
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.typed-text {
+    font-size: 1.3rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: var(--text-muted);
+    margin-bottom: 30px;
+    max-width: 520px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: 0.95rem;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+    box-shadow: 0 8px 20px rgba(92, 143, 199, 0.3);
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--primary-dark);
+    border: 2px solid var(--primary);
+}
+
+.btn-outline:hover {
+    background: var(--primary-light);
+    transform: translateY(-2px);
+}
+
+/* Foto Profil Di Kanan (Kotak Sudut Tumpul) */
+.hero-img-container {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.profile-img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    box-shadow: 0 20px 40px rgba(92, 143, 199, 0.25);
+    border: 4px solid white;
+    position: relative;
+    z-index: 2;
+}
+
+/* General Sections */
+.section {
+    padding: 90px 8%;
+}
+
+.bg-light {
+    background-color: #f1f6fc;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    color: #1e293b;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.section-header p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* About Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.about-card {
+    background: var(--bg-card);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.about-card h3 {
+    color: #1e293b;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+}
+
+.quick-info ul {
+    list-style: none;
+}
+
+.quick-info li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.quick-info li span {
+    font-weight: 600;
+    color: var(--text-main);
+    margin-right: 10px;
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.skill-card {
+    background: var(--bg-card);
+    padding: 25px 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 0.95rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+.progress.html { width: 90%; }
+.progress.css { width: 85%; }
+.progress.js { width: 70%; }
+.progress.php { width: 75%; }
+
+/* Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--bg-card);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(92, 143, 199, 0.15);
+}
+
+.project-body {
+    padding: 30px;
+}
+
+.tag {
+    display: inline-block;
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    padding: 5px 14px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.project-body h3 {
+    color: #1e293b;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.project-body p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* ========================================== */
+/* PERBAIKAN UTAMA: BAGIAN SERTIFIKAT (CERTIFICATES) */
+/* ========================================== */
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.cert-card {
+    background: var(--bg-card);
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    overflow: hidden; /* Mengunci agar gambar tidak keluar batas kartu */
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(92, 143, 199, 0.15);
+}
+
+/* Kotak Pembungkus Gambar Sertifikat */
+.cert-img-box {
+    width: 100%;
+    height: 220px; /* Tinggi kotak gambar yang ideal */
+    background: #edf2f7;
+    overflow: hidden;
+    position: relative;
+}
+
+.cert-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Menyesuaikan gambar agar pas memenuhi kotak */
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.cert-card:hover .cert-img-box img {
+    transform: scale(1.05); /* Efek zoom halus saat kursor menyentuh kartu */
+}
+
+/* Bagian Teks Sertifikat */
+.cert-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.cert-content h3 {
+    font-size: 1.1rem;
+    color: #1e293b;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.issuer {
+    font-size: 0.85rem;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cert-desc {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* Contact Section */
+.contact-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    background: var(--bg-card);
+    padding: 25px 35px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 280px;
+}
+
+.contact-item span {
+    font-size: 1.8rem;
+    background: var(--primary-light);
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.contact-item h4 {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.contact-item p {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #1e293b;
+    color: #94a3b8;
+    padding: 25px;
+    font-size: 0.9rem;
+}
